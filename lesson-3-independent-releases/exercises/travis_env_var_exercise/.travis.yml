@@ -13,7 +13,7 @@ install:
 before_script:
   - echo "no tests"
 
-script:
+script: echo "no tests"
   - docker --version # print the version for logging
   - docker build -t simple-node-tester --build-arg NAME=${NAME} .
   - docker tag simple-node-test ismskism/simple-node-tester
