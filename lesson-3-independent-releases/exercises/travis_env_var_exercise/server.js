@@ -1,4 +1,4 @@
-const favoriteFood = process.env.FAVORITE_FOOD;
+const FAVORITE_INSTRUCTOR = process.env.NAME;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -6,8 +6,7 @@ function sleep(ms) {
 
 async function main() {
   while (true) {
-    console.log(`My favorite food is ${favoriteFood}`);
-
+    console.log(`${FAVORITE_INSTRUCTOR} rocks!`);
     await sleep(5000);
   }
 }

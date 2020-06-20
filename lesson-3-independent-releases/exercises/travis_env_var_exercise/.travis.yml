@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-node-test --build-arg FAVORITE_FOOD=${FAVORITE_FOOD} .
+  - docker build -t simple-node-test --build-arg NAME=${NAME} .
   - docker tag simple-node-test ismskism/simple-node-test
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push ismskism/simple-node-test
