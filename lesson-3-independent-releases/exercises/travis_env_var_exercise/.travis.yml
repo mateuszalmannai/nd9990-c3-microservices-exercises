@@ -19,3 +19,7 @@ script:
   - docker tag simple-node-test ismskism/simple-node-test
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push ismskism/simple-node-test
+
+  notifications:
+    email:
+      - m.almannai@gmx.net
